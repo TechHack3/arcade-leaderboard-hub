@@ -1,0 +1,95 @@
+
+/* Contributors Page Styles */
+
+.contributors-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.contributors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contributor-card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(18, 245, 233, 0.2);
+}
+
+.contributor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border-color: var(--cyan);
+}
+
+.contributor-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.contributor-info {
+  padding: 1.5rem;
+}
+
+.contributor-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--cyan);
+  font-weight: bold;
+}
+
+.contributor-role {
+  font-size: 0.9rem;
+  color: var(--pink);
+  margin-bottom: 1rem;
+}
+
+.contributor-description {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.contributor-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.contributor-social a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contributor-social a:hover {
+  color: var(--cyan);
+}
+
+/* Animation classes */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contributors-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+}

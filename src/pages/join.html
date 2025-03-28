@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Leaderboard - Arcade Leaderboard Hub</title>
+    <meta name="description" content="Join the Google Cloud Arcade Leaderboard" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/join.css">
+  </head>
+
+  <body>
+    <div class="stars-container">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
+    
+    <header>
+      <nav class="main-nav">
+        <div class="logo">
+          <span class="logo-text">ARCADE</span>
+          <span class="logo-highlight">LEADERBOARD</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../../index.html">Leaderboard</a></li>
+          <li><a href="contributors.html">Previous Contributors</a></li>
+          <li><a href="youtube.html">TechHack Channel</a></li>
+          <li><a href="join.html" class="active join-btn">Join Leaderboard</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1 class="glowing-text">JOIN LEADERBOARD</h1>
+        <h2 class="subtitle">REGISTER NOW</h2>
+      </section>
+
+      <section class="registration-section">
+        <div class="form-container">
+          <form id="registration-form" class="registration-form">
+            <div class="form-group">
+              <label for="fullName">Full Name <span class="required">*</span></label>
+              <input type="text" id="fullName" name="fullName" required>
+            </div>
+            
+            <div class="form-group">
+              <label>Gender <span class="required">*</span></label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="male" required> Male
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="female"> Female
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="other"> Other
+                </label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="city">Enter Your City <span class="required">*</span></label>
+              <input type="text" id="city" name="city" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="milestone">Choose Your Milestone <span class="required">*</span></label>
+              <select id="milestone" name="milestone" required>
+                <option value="" disabled selected>Select your milestone</option>
+                <option value="beginner">Beginner Level (1-3 Skills)</option>
+                <option value="intermediate">Intermediate Level (4-6 Skills)</option>
+                <option value="advanced">Advanced Level (7+ Skills)</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="gcpProfile">Google Cloud Skills Boost Public Profile URL <span class="required">*</span></label>
+              <input type="url" id="gcpProfile" name="gcpProfile" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="githubProfile">Github Profile Link <span class="required">*</span></label>
+              <input type="url" id="githubProfile" name="githubProfile" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="linkedinProfile">LinkedIn Profile Link <span class="required">*</span></label>
+              <input type="url" id="linkedinProfile" name="linkedinProfile" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="photo">Upload Photo <span class="required">*</span></label>
+              <div class="file-input-container">
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+                <button type="button" class="file-input-button">Choose File</button>
+                <span class="file-name">No file chosen</span>
+              </div>
+            </div>
+            
+            <div class="preview-container">
+              <div id="photo-preview" class="photo-preview">
+                <p>Image Preview</p>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <button type="submit" class="submit-btn">SUBMIT REGISTRATION</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Google Cloud Arcade Leaderboard. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://youtube.com/@codewithtechhack" target="_blank">YouTube</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/form.js"></script>
+  </body>
+</html>

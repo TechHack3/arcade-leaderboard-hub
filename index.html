@@ -1,26 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>arcade-leaderboard-hub</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Arcade Leaderboard Hub</title>
+    <meta name="description" content="Arcade Leaderboard for Google Cloud Skills Boost" />
+    <meta name="author" content="TechHack" />
 
-    <meta property="og:title" content="Lovable Generated Project" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="Arcade Leaderboard Hub" />
+    <meta property="og:description" content="Leaderboard showcase for Google Cloud Arcade participants" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:site" content="@TechHack" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="src/css/style.css">
   </head>
 
   <body>
-    <div id="root"></div>
+    <div class="stars-container">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
+    
+    <header>
+      <nav class="main-nav">
+        <div class="logo">
+          <span class="logo-text">ARCADE</span>
+          <span class="logo-highlight">LEADERBOARD</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Leaderboard</a></li>
+          <li><a href="src/pages/contributors.html">Previous Contributors</a></li>
+          <li><a href="src/pages/youtube.html">TechHack Channel</a></li>
+          <li><a href="src/pages/join.html" class="join-btn">Join Leaderboard</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1 class="glowing-text">GOOGLE CLOUD ARCADE</h1>
+        <h2 class="subtitle">LEADERBOARD 2024</h2>
+      </section>
+
+      <section class="leaderboard-section">
+        <div class="podium-container">
+          <div class="podium-item place-2">
+            <div class="avatar-container">
+              <img src="src/assets/avatars/avatar2.jpg" alt="Second Place" class="avatar">
+              <div class="rank">2</div>
+            </div>
+            <h3>Jane Smith</h3>
+            <p>9,800 pts</p>
+          </div>
+          <div class="podium-item place-1">
+            <div class="avatar-container">
+              <img src="src/assets/avatars/avatar1.jpg" alt="First Place" class="avatar">
+              <div class="rank">1</div>
+            </div>
+            <h3>John Doe</h3>
+            <p>10,200 pts</p>
+          </div>
+          <div class="podium-item place-3">
+            <div class="avatar-container">
+              <img src="src/assets/avatars/avatar3.jpg" alt="Third Place" class="avatar">
+              <div class="rank">3</div>
+            </div>
+            <h3>Alex Johnson</h3>
+            <p>9,450 pts</p>
+          </div>
+        </div>
+
+        <div class="leaderboard-container">
+          <h2 class="section-title">TOP PERFORMERS</h2>
+          <div class="leaderboard">
+            <!-- Leaders 4-10 will be dynamically generated via JavaScript -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Google Cloud Arcade Leaderboard. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://youtube.com/@codewithtechhack" target="_blank">YouTube</a>
+        </div>
+      </div>
+    </footer>
+
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/animations.js"></script>
+    <script src="src/js/leaderboard.js"></script>
   </body>
 </html>
