@@ -9,7 +9,7 @@
 
 .contributors-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -55,23 +55,51 @@
 .contributor-description {
   font-size: 0.9rem;
   color: var(--text-dim);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.6;
+}
+
+.project-showcase {
+  margin: 1rem 0;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(18, 245, 233, 0.1);
+}
+
+.project-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.project-name {
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--cyan);
+  font-weight: bold;
 }
 
 .contributor-social {
   display: flex;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .contributor-social a {
   color: var(--text-light);
   text-decoration: none;
   transition: color 0.3s ease;
+  padding: 0.4rem 0.8rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 0.8rem;
 }
 
 .contributor-social a:hover {
   color: var(--cyan);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /* Animation classes */
@@ -89,7 +117,7 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   .contributors-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 1.5rem;
   }
 }
