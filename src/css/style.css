@@ -1,3 +1,4 @@
+
 /* Base Styles & CSS Reset */
 *, *::before, *::after {
   margin: 0;
@@ -342,7 +343,7 @@ header {
   border-color: var(--yellow);
 }
 
-/* Modify the rank display for podium items */
+/* Modify the rank display for all items except podium */
 .rank {
   position: absolute;
   bottom: -5px;
@@ -359,16 +360,18 @@ header {
   color: white;
 }
 
-/* Remove background and border-radius for podium ranks */
+/* Simple numbers for podium ranks */
 .place-1 .rank, .place-2 .rank, .place-3 .rank {
   background-color: transparent;
   border-radius: 0;
   width: auto;
   height: auto;
-  bottom: -10px;
-  right: -15px;
-  font-size: 1.2rem;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: static;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
 }
 
 .place-1 .rank {
@@ -381,6 +384,17 @@ header {
 
 .place-3 .rank {
   color: var(--pink);
+}
+
+.podium-item h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.podium-item p {
+  color: var(--text-dim);
+  font-weight: bold;
 }
 
 /* Leaderboard Table */
