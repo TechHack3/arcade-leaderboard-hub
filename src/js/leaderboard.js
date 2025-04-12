@@ -118,12 +118,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const avatar = podiumElement.querySelector('.avatar');
         const name = podiumElement.querySelector('h3');
         const score = podiumElement.querySelector('p');
+        const rank = podiumElement.querySelector('.rank');
         
         if (avatar) avatar.src = person.avatar;
         if (name) name.textContent = person.name;
         if (score) score.textContent = `${person.score} pts`;
+        if (rank) rank.textContent = person.rank;
       }
     });
   }
 });
-
