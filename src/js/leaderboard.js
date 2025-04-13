@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
       leaderboardItem.innerHTML = `
         <div class="leaderboard-rank">#${person.rank}</div>
         <div class="leaderboard-info">
-          <img src="${person.avatar}" alt="${person.name}" class="leaderboard-avatar">
+        &nbsp;
           <div class="leaderboard-name">${person.name}</div>
         </div>
         <div class="leaderboard-score">${person.score} pts</div>
