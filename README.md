@@ -54,8 +54,22 @@ To build the project for production, run:
 ```bash
 npm run build
 ```
-
 The production-ready files will be available in the dist folder.
+
+<hr/>
+
+**ℹ️ Note: If you are pushing changes to this repository, please use a new branch:**
+```bash
+git checkout -b your-feature-branch
+git add .
+git commit -m "Update README with local setup guide"
+git push origin your-feature-branch
+```
+Then create a pull request from your branch to `main`.
+```bash
+git pull origin main
+```
+<hr/>
 
 **Project Structure**
 src/: Contains the source code (React components, styles, and assets).
@@ -72,3 +86,4 @@ Feel free to fork the repository, make changes, and submit a pull request. Contr
 
 **License**
 This project is licensed under the **GPL-3.0 license**.
+
